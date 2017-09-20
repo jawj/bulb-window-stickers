@@ -76,4 +76,4 @@ end
 # HTML
 
 html = pipe 'html-minifier --remove-comments --collapse-whitespace --remove-redundant-attributes', doc.to_html
-open('index.html', 'w') { |f| f.write html }
+open('docs/index.html', 'w') { |f| f.write html }
