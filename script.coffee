@@ -65,7 +65,7 @@ makePDF = (url, callback) ->
   # === QR code ===
 
   qrCmds = ''
-  fakeCanvas =  # we masquerade as a <canvas> while outputting PDF drawing commands (and coalescing horizintally adjacent blocks)
+  fakeCanvas =  # we masquerade as a <canvas> while outputting PDF drawing commands (and coalescing horizontally adjacent blocks)
     width: null  # this value will be overwritten by the QR code library
     height: null  # ditto
     getContext: ->
